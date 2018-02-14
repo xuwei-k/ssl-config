@@ -12,7 +12,7 @@ object Version {
   val parserCombinators = "1.0.6"
 
   val specs2Scala210  = "3.8.9"
-  val specs2          = "4.0.1"
+  val specs2          = "4.0.2"
 
   val scala210       = "2.10.6"
   val scala211       = "2.11.11"
