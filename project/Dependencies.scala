@@ -8,7 +8,7 @@ object Version {
 
   // Because of https://github.com/sbt/sbt/issues/4609
   val parserCombinators211 = "1.1.2"
-  val parserCombinators = "1.1.2"
+  val parserCombinators = "2.0.0"
   val specs2          = "4.8.1"
 
   val scala211       = "2.11.12"
@@ -25,7 +25,7 @@ object Library {
   "org.specs2" %% "specs2-junit"         % Version.specs2 % "test",
   "org.specs2" %% "specs2-mock"          % Version.specs2 % "test",
   "org.specs2" %% "specs2-matcher-extra" % Version.specs2 % "test"
-  )
+  ).map(_ cross CrossVersion.for3Use2_13)
 
   val jodaTime          = "joda-time"              % "joda-time"                % Version.jodaTime  % "test" // ONLY FOR TESTS!
   val jodaTimeConvert   = "org.joda"               % "joda-convert"             % Version.jodaTimeConvert  % "test" // ONLY FOR TESTS!

@@ -7,6 +7,7 @@ package com.typesafe.sslconfig.ssl
 import org.specs2.mutable._
 import scala.util.parsing.input.CharSequenceReader
 import org.specs2.matcher.{ ExpectedParsedResult, ParserMatchers }
+import scala.language.implicitConversions
 
 object AlgorithmConstraintsParserSpec extends Specification with ParserMatchers {
 
